@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUST-RODZ // THIRD WORLDS ARCHIVE</title>
+  <meta name="description" content="Official digital portfolio and brutalist creative media archive for Just-Rodz, hosted on GitHub Pages.">
+  <meta name="keywords" content="Just-Rodz, GitHub Pages, Third Worlds, Death Grips aesthetic, Digital Art, Photoshop, Brutalist Web">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="JUST-RODZ // THIRD WORLDS ARCHIVE">
+  <meta property="og:description" content="Digital media archive and creative engineering portfolio for Just-Rodz.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="1.frog (1).png">
+
+  <!-- Favicon / Brutalist Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><circle cx='50' cy='50' r='38' stroke='%23fff' stroke-width='4' fill='none'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='monospace' font-weight='900' font-size='32' fill='%23fff'>JR</text></svg>">
+
+  <!-- Brutalist Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CRT Scanline & Grain Overlay -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <!-- Main Brutalist Wrapper -->
+  <div class="site-wrapper">
+
+    <!-- =========================================================================
+         1. TOP TICKER & TELEMETRY BAR
+         ========================================================================= -->
+    <aside class="top-ticker-bar" aria-label="System Telemetry">
+      <div class="ticker-left">
+        <span><span class="pulse-glyph">&#9679;</span> NODE: ONLINE</span>
+        <span class="ticker-sep">//</span>
+        <span>SYS TIME: <span id="liveClock">2026-11-09 // 00:00:00Z</span></span>
+        <span class="ticker-sep">//</span>
+        <span>HOST: GITHUB PAGES [Just-Rodz.github.io]</span>
+      </div>
+      <div class="ticker-controls">
+        <button id="crtToggleBtn" class="control-btn" title="Toggle CRT Scanline Overlay">[ CRT: OFF ]</button>
+        <button id="audioToggleBtn" class="control-btn" title="Toggle Tactile Web Audio Feedback">[ AUDIO: OFF ]</button>
+        <button id="invertToggleBtn" class="control-btn" title="Toggle Color Inversion">[ INVERT ]</button>
+      </div>
+    </aside>
+
+    <!-- =========================================================================
+         2. SITE HEADER & THIRD WORLDS SERPENT SEAL
+         ========================================================================= -->
+    <header class="site-header" id="top">
+      <div class="sigil-container" title="Just-Rodz Third Worlds Sigil">
+        <!-- Iconic Third Worlds inspired geometric serpent & orphic seal -->
+        <svg class="sigil-svg" viewBox="0 0 100 100" aria-label="Third Worlds Esoteric Seal">
+          <!-- Outer Ouroboros Ring -->
+          <circle cx="50" cy="50" r="44" stroke="currentColor" stroke-width="1.8" stroke-dasharray="3 3"/>
+          <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="2.2"/>
+          <!-- Inner Serpentine Coil -->
+          <path d="M 50,16 C 68,16 82,32 82,50 C 82,68 68,84 50,84 C 32,84 18,68 18,50 C 18,36 28,26 40,26 C 52,26 62,34 62,46 C 62,56 54,64 46,64 C 40,64 34,58 34,52 C 34,46 38,42 44,42 C 48,42 52,46 52,50" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <!-- Core Central Nucleus -->
+          <circle cx="50" cy="50" r="4" fill="currentColor"/>
+          <!-- Axis Crosshairs -->
+          <line x1="50" y1="6" x2="50" y2="14" stroke="currentColor" stroke-width="2"/>
+          <line x1="50" y1="86" x2="50" y2="94" stroke="currentColor" stroke-width="2"/>
+          <line x1="6" y1="50" x2="14" y2="50" stroke="currentColor" stroke-width="2"/>
+          <line x1="86" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </div>
+
+      <h1 class="site-title">JUST-RODZ</h1>
+      <p class="site-subtitle">THIRD WORLDS DIGITAL VAULT &bull; CREATIVE COMPUTATION &bull; GITHUB ARCHIVE</p>
+
+      <!-- Brutalist Monospace Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#works" class="nav-item">[ WORKS ]</a>
+        <span class="nav-sep">//</span>
+        <a href="#directory" class="nav-item">[ DIRECTORY ]</a>
+        <span class="nav-sep">//</span>
+        <a href="#deploy" class="nav-item">[ DEPLOYMENT ]</a>
+        <span class="nav-sep">//</span>
+        <a href="#about" class="nav-item">[ DOSSIER ]</a>
+        <span class="nav-sep">//</span>
+        <a href="https://github.com/Just-Rodz" target="_blank" rel="noopener noreferrer" class="nav-item highlight">[ GITHUB &rarr; ]</a>
+      </nav>
+    </header>
+
+    <!-- =========================================================================
+         3. MANIFESTO BANNER
+         ========================================================================= -->
+    <section class="manifesto-banner" aria-label="Archival Manifesto">
+      <div class="banner-meta">TRANSMISSION // REF: JR-MANIFESTO-2026 // PUBLIC INDEX</div>
+      <blockquote class="banner-quote">
+        "Pure digital brutalism. Stripped of corporate ornamentation, gradient softness, and algorithm-dictated polish. 
+        Raw imagery, hand-written markup, and uncompromised digital media delivered directly from source repository to viewport."
+      </blockquote>
+    </section>
+
+    <!-- =========================================================================
+         4. WORKS & CREATIVE RELEASES (Third Worlds Grid)
+         ========================================================================= -->
+    <main>
+      <section class="section-container" id="works">
+        <header class="section-header-brutalist">
+          <h2 class="section-title">// WORKS &bull; DIGITAL RELEASES</h2>
+          <span class="section-meta">INDEX: 07 CATALOGUED ASSETS &bull; 300 DPI LOSSLESS</span>
+        </header>
+
+        <div class="catalog-grid" id="catalogGrid">
+
+          <!-- Release 01: Frog -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-01">
+              <span class="image-catalog-tag">JR-01</span>
+              <img src="1.frog (1).png" alt="Surreal Frog Study" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-01 &bull; 2026-09-30</span>
+              <h3 class="card-title">SURREAL FROG // METAMORPHOSIS</h3>
+              <p class="card-desc">Organic texture integration, specular surface balance, and surreal scale distortion.</p>
+              <div class="card-specs">
+                <span class="spec-item">3840x2160 UHD</span>
+                <span class="spec-item">5.48 MB PNG</span>
+                <span class="spec-item">300 DPI</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-01">[ INSPECT ]</button>
+                <a href="1.frog (1).png" download="1.frog (1).png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Release 02: Fish -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-02">
+              <span class="image-catalog-tag">JR-02</span>
+              <img src="2. fish.png" alt="Aquatic Life Study" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-02 &bull; 2026-09-30</span>
+              <h3 class="card-title">AQUATIC LIFE // BIOLUMINESCENCE</h3>
+              <p class="card-desc">Subsurface luminescence, underwater caustic scattering, and deep-spectrum cyan saturation.</p>
+              <div class="card-specs">
+                <span class="spec-item">2560x1440 QHD</span>
+                <span class="spec-item">948 KB PNG</span>
+                <span class="spec-item">300 DPI</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-02">[ INSPECT ]</button>
+                <a href="2. fish.png" download="2. fish.png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Release 03: Figure -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-03">
+              <span class="image-catalog-tag">JR-03</span>
+              <img src="3. figure.png" alt="Silhouette Figure Study" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-03 &bull; 2026-09-30</span>
+              <h3 class="card-title">SILHOUETTE // MONOCHROME FORM</h3>
+              <p class="card-desc">Chiaroscuro study isolating negative space, edge threshold compression, and silhouette density.</p>
+              <div class="card-specs">
+                <span class="spec-item">2048x2048 1:1</span>
+                <span class="spec-item">840 KB PNG</span>
+                <span class="spec-item">300 DPI</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-03">[ INSPECT ]</button>
+                <a href="3. figure.png" download="3. figure.png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Release 04: Hector -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-04">
+              <span class="image-catalog-tag">JR-04</span>
+              <img src="4. hector.png" alt="Hector Entity Study" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-04 &bull; 2026-09-30</span>
+              <h3 class="card-title">HECTOR // ENTITY SPECIMEN</h3>
+              <p class="card-desc">High-density character asset examining specular shading and displacement texture mapping.</p>
+              <div class="card-specs">
+                <span class="spec-item">4096x2304 4K+</span>
+                <span class="spec-item">8.05 MB PNG</span>
+                <span class="spec-item">300 DPI</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-04">[ INSPECT ]</button>
+                <a href="4. hector.png" download="4. hector.png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Release 05: Candle -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-05">
+              <span class="image-catalog-tag">JR-05</span>
+              <img src="5. candle.png" alt="Ambient Candlelight Study" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-05 &bull; 2026-09-30</span>
+              <h3 class="card-title">CANDLE // OBLIVION RADIANCE</h3>
+              <p class="card-desc">Volumetric light decay modeling incandescent illumination swallowed by absolute dark.</p>
+              <div class="card-specs">
+                <span class="spec-item">3840x2160 UHD</span>
+                <span class="spec-item">7.42 MB PNG</span>
+                <span class="spec-item">300 DPI</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-05">[ INSPECT ]</button>
+                <a href="5. candle.png" download="5. candle.png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Release 06: Acro -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-06">
+              <span class="image-catalog-tag">JR-06</span>
+              <img src="6. acro.png" alt="Dynamic Acrobatic Motion Study" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-06 &bull; 2026-09-30</span>
+              <h3 class="card-title">ACRO // TEMPORAL VELOCITY</h3>
+              <p class="card-desc">Multi-exposure shutter simulation analyzing kinetic trajectory and directional motion blur.</p>
+              <div class="card-specs">
+                <span class="spec-item">3840x2160 UHD</span>
+                <span class="spec-item">7.53 MB PNG</span>
+                <span class="spec-item">300 DPI</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-06">[ INSPECT ]</button>
+                <a href="6. acro.png" download="6. acro.png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Release 00: Demo Asset -->
+          <article class="catalog-card">
+            <div class="catalog-card-image-wrap" data-inspect-id="JR-00">
+              <span class="image-catalog-tag">JR-00</span>
+              <img src="images/demo.png" alt="Archival Benchmark Demo" class="catalog-card-image" loading="lazy">
+              <div class="image-inspect-overlay">
+                <span class="inspect-badge">[ INSPECT DOSSIER ]</span>
+              </div>
+            </div>
+            <div class="catalog-card-body">
+              <span class="card-code">CATALOG // JR-00 &bull; 2026-11-09</span>
+              <h3 class="card-title">SYSTEM LAB // CALIBRATION PATTERN</h3>
+              <p class="card-desc">Pipeline test raster measuring dynamic color compression, pixel boundaries, and render gamut.</p>
+              <div class="card-specs">
+                <span class="spec-item">1920x1080 FHD</span>
+                <span class="spec-item">1.20 MB PNG</span>
+                <span class="spec-item">CALIBRATION</span>
+              </div>
+              <div class="card-actions">
+                <button class="btn-brutalist" data-inspect-id="JR-00">[ INSPECT ]</button>
+                <a href="images/demo.png" download="demo.png" class="btn-brutalist">[ RAW ASSET ]</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           5. RAW DIRECTORY ARCHIVE (UNIX / FTP STYLE)
+           ========================================================================= -->
+      <section class="section-container directory-section" id="directory">
+        <header class="section-header-brutalist">
+          <h2 class="section-title">// DIRECTORY &bull; /just-rodz/vault/</h2>
+          <span class="section-meta" id="dirCounter">10 OBJECTS LISTED</span>
+        </header>
+
+        <div class="dir-header-bar">
+          <div class="dir-path">
+            <span>INDEX OF /just-rodz/github-pages/</span>
+          </div>
+          <div class="dir-search-wrap">
+            <label for="dirSearchInput" class="dir-path">[ FILTER ]:</label>
+            <input type="text" id="dirSearchInput" class="dir-search-input" placeholder="filename or ext...">
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="brutalist-table">
+            <thead>
+              <tr>
+                <th>PERMISSIONS</th>
+                <th>SIZE</th>
+                <th>MODIFIED</th>
+                <th>IDENTIFIER / FILENAME</th>
+                <th>ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="dirTableBody">
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">5.48 MB</td>
+                <td class="cell-mono-dim">2026-09-30 12:56</td>
+                <td><a href="1.frog (1).png" class="cell-file-link" target="_blank">1.frog (1).png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-01">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">948 KB</td>
+                <td class="cell-mono-dim">2026-09-30 13:00</td>
+                <td><a href="2. fish.png" class="cell-file-link" target="_blank">2. fish.png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-02">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">840 KB</td>
+                <td class="cell-mono-dim">2026-09-30 13:00</td>
+                <td><a href="3. figure.png" class="cell-file-link" target="_blank">3. figure.png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-03">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">8.05 MB</td>
+                <td class="cell-mono-dim">2026-09-30 13:16</td>
+                <td><a href="4. hector.png" class="cell-file-link" target="_blank">4. hector.png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-04">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">7.42 MB</td>
+                <td class="cell-mono-dim">2026-09-30 13:16</td>
+                <td><a href="5. candle.png" class="cell-file-link" target="_blank">5. candle.png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-05">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">7.53 MB</td>
+                <td class="cell-mono-dim">2026-09-30 13:16</td>
+                <td><a href="6. acro.png" class="cell-file-link" target="_blank">6. acro.png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-06">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">1.20 MB</td>
+                <td class="cell-mono-dim">2026-11-09 00:42</td>
+                <td><a href="images/demo.png" class="cell-file-link" target="_blank">images/demo.png</a></td>
+                <td><a href="#" class="table-action-link" data-inspect-id="JR-00">[VIEW]</a></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">24 KB</td>
+                <td class="cell-mono-dim">2026-11-09 13:42</td>
+                <td><a href="index.html" class="cell-file-link">index.html</a></td>
+                <td><span class="cell-mono-dim">[INDEX]</span></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">18 KB</td>
+                <td class="cell-mono-dim">2026-11-09 13:42</td>
+                <td><a href="style.css" class="cell-file-link">style.css</a></td>
+                <td><span class="cell-mono-dim">[CSS]</span></td>
+              </tr>
+              <tr>
+                <td class="cell-mono-dim">-rw-r--r--</td>
+                <td class="cell-mono-dim">12 KB</td>
+                <td class="cell-mono-dim">2026-11-09 13:42</td>
+                <td><a href="script.js" class="cell-file-link">script.js</a></td>
+                <td><span class="cell-mono-dim">[JS]</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           6. GITHUB PAGES DEPLOYMENT PROTOCOL
+           ========================================================================= -->
+      <section class="section-container" id="deploy">
+        <header class="section-header-brutalist">
+          <h2 class="section-title">// GITHUB PAGES &bull; DEPLOYMENT PROTOCOL</h2>
+          <span class="section-meta">TARGET: https://just-rodz.github.io/</span>
+        </header>
+
+        <div class="deploy-terminal">
+          <div class="terminal-top">
+            <span class="terminal-title">SHELL // bash &bull; deploy-github-pages.sh</span>
+            <button id="copyDeployBtn" class="control-btn">[ COPY COMMANDS ]</button>
+          </div>
+          <div class="terminal-body">
+            <pre><code id="deployTerminalCode"><span class="terminal-comment"># 1. Initialize git repository in this folder</span>
+<span class="terminal-prompt">$ </span><span class="terminal-cmd">git init</span>
+<span class="terminal-prompt">$ </span><span class="terminal-cmd">git checkout -b main</span>
+
+<span class="terminal-comment"># 2. Add all creative assets and Hand-crafted markup</span>
+<span class="terminal-prompt">$ </span><span class="terminal-cmd">git add .</span>
+<span class="terminal-prompt">$ </span><span class="terminal-cmd">git commit -m "feat: launch Just-Rodz third worlds brutalist archive"</span>
+
+<span class="terminal-comment"># 3. Connect to your GitHub repository (https://github.com/Just-Rodz)</span>
+<span class="terminal-comment"># Option A: Primary User Site (Just-Rodz.github.io)</span>
+<span class="terminal-prompt">$ </span><span class="terminal-cmd">git remote add origin https://github.com/Just-Rodz/Just-Rodz.github.io.git</span>
+<span class="terminal-prompt">$ </span><span class="terminal-cmd">git push -u origin main</span>
+
+<span class="terminal-comment"># Option B: Project Repo (e.g. portfolio or photoshop-demo)</span>
+<span class="terminal-comment"># git remote add origin https://github.com/Just-Rodz/&lt;repo-name&gt;.git</span>
+<span class="terminal-comment"># git push -u origin main</span></code></pre>
+          </div>
+        </div>
+
+        <div class="deploy-steps-list">
+          <div class="step-card">
+            <span class="step-num">STEP 01</span>
+            <h4 class="step-title">CREATE REPO ON GITHUB</h4>
+            <p class="step-desc">
+              Go to <a href="https://github.com/new" target="_blank" rel="noopener noreferrer">github.com/new</a>.
+              Name it exactly <code>Just-Rodz.github.io</code> for your top-level user website, or any repo name for a project site.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">STEP 02</span>
+            <h4 class="step-title">PUSH OR UPLOAD FILES</h4>
+            <p class="step-desc">
+              Push via terminal commands above, or drag and drop all files directly via GitHub's web interface ("Add file" &rarr; "Upload files").
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">STEP 03</span>
+            <h4 class="step-title">ENABLE GITHUB PAGES</h4>
+            <p class="step-desc">
+              Under <strong>Settings</strong> &rarr; <strong>Pages</strong>, set Source to <code>Deploy from a branch</code>, Branch to <code>main</code>, and Folder to <code>/(root)</code>.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-num">STEP 04</span>
+            <h4 class="step-title">LIVE AT JUST-RODZ.GITHUB.IO</h4>
+            <p class="step-desc">
+              GitHub actions will build and deploy the static site in ~60 seconds. Accessible worldwide with HTTPS encryption.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           7. ABOUT / DOSSIER
+           ========================================================================= -->
+      <section class="section-container" id="about">
+        <header class="section-header-brutalist">
+          <h2 class="section-title">// DOSSIER &bull; IDENTITY &amp; CREED</h2>
+          <span class="section-meta">ENTITY: JUST-RODZ</span>
+        </header>
+
+        <div style="max-width: 820px; line-height: 1.8; color: var(--text-white); font-size: 13px;">
+          <p style="margin-bottom: 16px;">
+            <strong>JUST-RODZ</strong> is a digital media workspace exploring the intersections of visual compositing, 
+            high-contrast brutalist web aesthetics, and decentralized digital distribution.
+          </p>
+          <p style="color: var(--text-dim); margin-bottom: 24px;">
+            Constructed with pure HTML5, vanilla CSS3, and ES6 JavaScript. No framework overhead. No surveillance scripts. 
+            All visual artifacts rendered at 300 DPI native compositing clarity. Inspired by the uncompromising web architecture of 
+            <a href="https://thirdworlds.net" target="_blank" rel="noopener noreferrer">thirdworlds.net</a>.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://github.com/Just-Rodz" target="_blank" rel="noopener noreferrer" class="btn-brutalist primary">
+              [ VISIT GITHUB: @Just-Rodz ]
+            </a>
+            <a href="#top" class="btn-brutalist">
+              [ RETURN TO TOP &uarr; ]
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================================
+         8. FOOTER
+         ========================================================================= -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-title">JUST-RODZ &bull; THIRD WORLDS VAULT</span>
+          <span>UPTIME: <span id="serverUptime">00:00:00</span> // STATUS: NOMINAL</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Just-Rodz" target="_blank" rel="noopener noreferrer">[ GITHUB.COM/JUST-RODZ ]</a>
+          <a href="https://thirdworlds.net" target="_blank" rel="noopener noreferrer">[ INSPIRATION: THIRDWRLDS ]</a>
+          <a href="#top">[ TOP ]</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- =========================================================================
+       9. MODAL DOSSIER (ARTWORK FULL INSPECTOR)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="dossierModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span id="modalCode">CATALOG // SPECIMEN</span>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">[ ESC / CLOSE ]</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-pane">
+          <img src="" alt="" id="modalImg" class="modal-img">
+        </div>
+        <div class="modal-info-pane">
+          <h3 class="modal-title" id="modalTitle">ASSET TITLE</h3>
+          <p class="modal-desc" id="modalDesc">Detailed conceptual analysis and compositing execution breakdown.</p>
+          
+          <div class="modal-meta-list">
+            <div class="modal-meta-row">
+              <span>FILE:</span>
+              <span class="modal-meta-val" id="modalMetaFile">-</span>
+            </div>
+            <div class="modal-meta-row">
+              <span>FILE SIZE:</span>
+              <span class="modal-meta-val" id="modalMetaSize">-</span>
+            </div>
+            <div class="modal-meta-row">
+              <span>FORMAT:</span>
+              <span class="modal-meta-val" id="modalMetaFormat">-</span>
+            </div>
+            <div class="modal-meta-row">
+              <span>DIMENSIONS:</span>
+              <span class="modal-meta-val" id="modalMetaDim">-</span>
+            </div>
+            <div class="modal-meta-row">
+              <span>HASH:</span>
+              <span class="modal-meta-val" id="modalMetaChecksum">-</span>
+            </div>
+          </div>
+
+          <a href="#" download id="modalDownloadBtn" class="btn-brutalist primary" style="width: 100%; text-align: center;">
+            [ DOWNLOAD RAW FILE ]
+          </a>
+
+          <div class="modal-nav-row">
+            <button class="btn-brutalist" id="modalPrevBtn">&larr; [ PREV ]</button>
+            <button class="btn-brutalist" id="modalNextBtn">[ NEXT ] &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div class="brutalist-toast" id="brutalistToast" role="alert" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
